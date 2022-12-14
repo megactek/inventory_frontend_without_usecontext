@@ -1,0 +1,306 @@
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .inner {
+    min-width: 50%;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #3f3f3f;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media(max-width:500px) {
+  .login {
+    .inner {
+      min-width: 100%;
+      overflow: hidden;
+    }
+  }
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+.menu {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu:hover {
+  color: #1890ff;
+  font-size: 40px;
+}
+
+.logo {
+  height: 35px;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.logo span {
+  padding: 10px;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  font-weight: 500;
+  font-size: 1.1rem;
+  justify-content: center;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+}
+
+.site-layout-background {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  background: #000159;
+  margin: 0;
+  width: 100%;
+  position: static;
+
+  button {
+    position: absolute;
+    right: 3%;
+  }
+}
+
+.site-layout {
+  margin-left: 0;
+}
+
+//   SIDEBAR
+
+
+//   NAVBAR
+.navbar {
+  background-color: white;
+}
+
+.sidebar {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .logo {
+    height: 40px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .site-layout {
+    margin-left: 200px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .sidebar {
+    display: block;
+    height: 100vh;
+    margin-right: 0px;
+  }
+
+}
+
+// card Header
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000159;
+  margin-bottom: 10px;
+
+  .rightContent {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+}
+
+.avatar-uploader {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+
+  button {
+    position: relative;
+  }
+}
+
+.invoice-footer {
+  padding-top: 5px;
+  position: relative;
+  font-size: 2rem;
+
+  button {
+    position: absolute;
+    left: 65%;
+    font-weight: 500;
+  }
+}
+
+.brief {
+  padding: 20px 20px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.invoice-card {
+  padding: 10px;
+}
+
+.account-card {
+  padding-top: 5%;
+  padding-left: 5%;
+  overflow: hidden;
+}
+
+.summaryContainer {
+  display: flex;
+  align-items: center;
+
+  .summaryContent {
+    width: 100%;
+    margin-right: 2em;
+    display: flex;
+    justify-content: space-between;
+
+    .info {
+      font-weight: 12px;
+      color: darken(white, 40%);
+    }
+
+    .count {
+      font-size: 20px;
+      font-weight: bold;
+      color: black;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .icon {
+      .inventory {
+        path {
+          fill: #269962;
+        }
+      }
+
+      .groups {
+        path {
+          fill: #265299;
+        }
+      }
+
+      .shops {
+        path {
+          fill: #da631e;
+        }
+      }
+
+      .users {
+        path {
+          fill: #269999;
+        }
+      }
+    }
+  }
+}
+
+.dashboard-ui-st {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2em;
+}
+
+.purchases {
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .info {
+    font-size: 12px;
+    color: #757575;
+
+  }
+}
+
+.pieUI {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.topSellContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-gap: .5em;
+
+
+  .topSellingItem {
+    background-color: darken(white, 10%);
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-height: 80%;
+
+
+
+    .imageCon {
+      margin: auto;
+      padding: auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: darken(white, 20%);
+
+      img {
+        height: 100%;
+        max-height: 80px;
+        width: 100%;
+        padding: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
